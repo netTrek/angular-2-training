@@ -1,26 +1,27 @@
-Setup for Angular 2 Project like: https://angular.io/docs/ts/latest/quickstart.html
+## Setup for Angular 2 Project with system.js
+#### Based on https://angular.io/docs/ts/latest/quickstart.html
 
-**    make package.json**
+##make package.json
 * npm init
 
-**    add devDependencies**
+###add devDependencies
 * npm install concurrently --save-dev
 * npm install lite-server --save-dev
 * npm install typescript --save-dev
 * npm install typings --save-dev
 
-**    add polyfill dependencies**
+###add polyfill dependencies
 * npm install core-js --save
 
-**    add vendor dependencies**
+###add vendor dependencies
 * npm install rxjs --save
 * npm install zone.js --save
 * npm install reflect-metadata --save
 * npm install systemjs --save
 
 
-**    add angular vendor dependencies**
-//details: https://angular.io/docs/ts/latest/guide/npm-packages.html
+###add angular vendor dependencies
+####details: https://angular.io/docs/ts/latest/guide/npm-packages.html
 
 * npm install @angular/core --save
 * npm install @angular/common --save
@@ -31,7 +32,7 @@ Setup for Angular 2 Project like: https://angular.io/docs/ts/latest/quickstart.h
 * npm install @angular/router --save
 * npm install @angular/router-deprecated --save
 
-**    add generate tsconfig and modify**
+##add generate tsconfig and modify
 * npm run tsc -- -init
 
         "module": "commonjs",
@@ -43,15 +44,15 @@ Setup for Angular 2 Project like: https://angular.io/docs/ts/latest/quickstart.h
         "noImplicitAny": false,
         "sourceMap": true
 
-**    add generate typings config** 
+##generate typings config
 * npm run typings -- init
 
-**    add typings** 
+###add typings
 * npm run typings -- install dt~node --save --global
 * npm run typings -- install dt~core-js --save --global
 
 
-**    add npm scripts** 
+##add npm scripts
 
     "postinstall": "typings install",
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -59,7 +60,7 @@ Setup for Angular 2 Project like: https://angular.io/docs/ts/latest/quickstart.h
             "tsc": "tsc",
     "tsc:w": "tsc -w",
     
-
+##finish
 * create system.config.js
 * Index html fertig stellen
 
