@@ -6,27 +6,42 @@
 
 ###add devDependencies
 * npm install concurrently --save-dev
+
 > Gleichzeitiges Ausführen von Prozessen
+
 * npm install lite-server --save-dev
+
 > Server mit Reload Mechanismus
+
 * npm install typescript --save-dev
+
 > TypeScript für node.js
+
 * npm install typings --save-dev
+
 > TypeScript D.ts Steuern
 
 ###add polyfill dependencies
 * npm install core-js --save
+
 > es2015/E6 polyfills
 
 
 ###add vendor dependencies
 * npm install rxjs --save
+
 > Biliothek um Ereignis und Asynchrone Prozesse zu Überwachen. Wird für HTTP Aufrufe von Angular genutzt.
+
 * npm install zone.js --save
+
 > Ähnlich domains in Node, Ausführungskontext der uns ermöglicht die Ausführung zu überwachen und zu delegieren.
+
 * npm install reflect-metadata --save
+
 > Metadaten in konsistenter Weise zu einer Klasse hinzuzufügen.
+
 * npm install systemjs --save
+
 > Modul Loder für ES2015/ES6 Module
 
 
@@ -34,19 +49,32 @@
 >details: https://angular.io/docs/ts/latest/guide/npm-packages.html
 
 * npm install @angular/core --save
+
 > Notwendige für jede Anwendung. Ist der Kern für Komponenten, Direktiven, Dependency Injection und  Komponentenlebenszyklus
+
 * npm install @angular/common --save
+
 > Häufig verwendete Direktiven, Pipes und Services
+
 * npm install @angular/compiler --save
+
 > Kompiniert Logik mit Vorlagen. Der Compiler wird autom. über die platform-browser-dynamic angestoßen
+
 * npm install @angular/platform-browser --save
+
 > Browser und DOM relevante Bestandteile, vor allem zum rendern neuer Elemente. Ermöglicht über bootstrapStatic as Bootstrapping vorkompilierter Vorlagen.
+
 * npm install @angular/platform-browser-dynamic --save
+
 > Verfügt über die Bootstrapping Methode
+
 * npm install @angular/http --save
+
 > Modul für HTTP Aufrufe
+
 * npm install @angular/router --save
 * npm install @angular/router-deprecated --save
+
 > Module für den Komponenten Router
 
 ##add generate tsconfig and modify
@@ -78,7 +106,7 @@
     "lite": "lite-server",
             "tsc": "tsc",
     "tsc:w": "tsc -w",
-    
+
 ##finish
 * create system.config.js
 * Index html fertig stellen
