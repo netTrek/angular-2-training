@@ -1,7 +1,8 @@
 {
-  "name": "setup",
+  "name": "angular2setup",
+  "dependencies": {},
   "globalDependencies": {
-    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
-    "node": "registry:dt/node#6.0.0+20160608110640"
+    "core-js": "registry:dt/core-js#0.0.0+20160914114559",
+    "node": "registry:dt/node#6.0.0+20160925070332"
   }
 }
